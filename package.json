@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "textures",
+  "version": "0.0.0",
+  "description": "Recreated textures.js (https://riccardoscalco.it/textures/) in React.",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/benjaminkimball/textures.git"
+  },
+  "author": "Benjamin Kimball <hello@benjaminkimball.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://gitlab.com/benjaminkimball/textures/issues"
+  },
+  "homepage": "https://gitlab.com/benjaminkimball/textures#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}

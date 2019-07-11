@@ -1,6 +1,6 @@
 import React from "react";
 
-const LinesPattern = ({
+const Lines = ({
   background,
   heavier,
   id,
@@ -44,7 +44,7 @@ const LinesPattern = ({
   );
 };
 
-LinesPattern.defaultProps = {
+Lines.defaultProps = {
   orientation: ["diagonal"],
   shapeRendering: "auto",
   size: 20,
@@ -146,4 +146,4 @@ const path = (size, orientation) => {
   }
 };
 
-export default LinesPattern;
+export default Lines;

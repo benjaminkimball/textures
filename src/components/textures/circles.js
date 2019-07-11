@@ -1,6 +1,6 @@
 import React from "react";
 
-const CirclePatterns = ({
+const Circles = ({
   background,
   complement,
   fill,
@@ -52,7 +52,7 @@ const CirclePatterns = ({
   );
 };
 
-CirclePatterns.defaultProps = {
+Circles.defaultProps = {
   complement: false,
   fill: "#06142a",
   radius: 2,
@@ -61,4 +61,4 @@ CirclePatterns.defaultProps = {
   strokeWidth: 0
 };
 
-export default CirclePatterns;
+export default Circles;

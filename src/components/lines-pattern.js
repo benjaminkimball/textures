@@ -25,6 +25,8 @@ const LinesPattern = ({
 
   if (thinner) isNaN(thinner) ? (size *= 2) : (size *= 2 * thinner);
 
+  console.log(background);
+
   return (
     <defs>
       <pattern id={id} patternUnits="userSpaceOnUse" width={size} height={size}>

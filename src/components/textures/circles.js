@@ -54,10 +54,10 @@ const Circles = ({
 
 Circles.defaultProps = {
   complement: false,
-  fill: "#06142a",
+  fill: "#343434",
   radius: 2,
   size: 20,
-  stroke: "#06142a",
+  stroke: "#343434",
   strokeWidth: 0
 };
 

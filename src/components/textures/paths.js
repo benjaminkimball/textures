@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Paths = ({
   background,
@@ -53,6 +54,23 @@ const Paths = ({
       </pattern>
     </defs>
   );
+};
+
+Paths.propTypes = {
+  background: PropTypes.string,
+  fill: PropTypes.string,
+  heavier: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  height: PropTypes.number,
+  id: PropTypes.string.isRequired,
+  lighter: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  shapeRendering: PropTypes.string,
+  size: PropTypes.number,
+  stroke: PropTypes.string,
+  strokeWidth: PropTypes.number,
+  thicker: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  thinner: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  type: PropTypes.string,
+  width: PropTypes.number
 };
 
 Paths.defaultProps = {

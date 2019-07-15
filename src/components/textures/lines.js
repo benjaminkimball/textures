@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Lines = ({
   background,
@@ -42,6 +43,23 @@ const Lines = ({
       </pattern>
     </defs>
   );
+};
+
+Lines.propTypes = {
+  background: PropTypes.string,
+  heavier: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  id: PropTypes.string.isRequired,
+  lighter: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  orientation: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.string
+  ]),
+  shapeRendering: PropTypes.string,
+  size: PropTypes.number,
+  stroke: PropTypes.string,
+  strokeWidth: PropTypes.number,
+  thicker: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  thinner: PropTypes.oneOfType([PropTypes.bool, PropTypes.number])
 };
 
 Lines.defaultProps = {

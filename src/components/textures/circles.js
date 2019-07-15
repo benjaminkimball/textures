@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Circles = ({
   background,
@@ -50,6 +51,21 @@ const Circles = ({
       </pattern>
     </defs>
   );
+};
+
+Circles.propTypes = {
+  background: PropTypes.string,
+  complement: PropTypes.bool,
+  fill: PropTypes.string,
+  heavier: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  id: PropTypes.string.isRequired,
+  lighter: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  radius: PropTypes.number,
+  size: PropTypes.number,
+  stroke: PropTypes.string,
+  strokeWidth: PropTypes.number,
+  thicker: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  thinner: PropTypes.oneOfType([PropTypes.bool, PropTypes.number])
 };
 
 Circles.defaultProps = {

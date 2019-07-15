@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "standard",
+    "standard-react",
+    "plugin:prettier/recommended",
+    "plugin:security/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": ["prettier", "security"]
+}

@@ -14,7 +14,12 @@ const App = () => (
     <Paths id="paths1" background="white" lighter type="crosses" />
     <circle cx="75%" cy="50%" r="50" fill="url(#paths1)" />
 
-    <text x="10%" y="75%" style={{ fontSize: "54px", fontWeight: "bold" }}>
+    <text
+      x="50%"
+      y="65%"
+      style={{ fontSize: "54px", fontWeight: "bold" }}
+      textAnchor="middle"
+    >
       textures
     </text>
   </svg>

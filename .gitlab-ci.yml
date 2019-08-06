@@ -9,7 +9,7 @@ stages:
   script:
     - npm audit --audit-level=high
 
-Linting:
+"Script Linting":
   stage: test
   script:
     - npm ci

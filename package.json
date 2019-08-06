@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "description": "Recreated textures.js (https://riccardoscalco.it/textures/) in React.",
   "scripts": {
+    "build": "parcel build src/index.html --out-dir public --public-url /palette",
     "format": "prettier --write 'src/**/*'",
     "lint": "eslint 'src/**/*.js'",
     "start": "parcel src/index.html",

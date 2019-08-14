@@ -1,0 +1,27 @@
+image: node:10.16.2
+
+stages:
+  - test
+  - build
+
+"Dependency Audit":
+  stage: test
+  script:
+    - yarn audit --level high
+
+"Script Linting":
+  stage: test
+  script:
+    - yarn install
+    - yarn lint
+
+pages:
+  stage: build
+  script:
+    - yarn install
+    - yarn build
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

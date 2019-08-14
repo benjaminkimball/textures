@@ -1,5 +1,4 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { h } from "preact";
 
 const Circles = ({
   background,
@@ -33,7 +32,7 @@ const Circles = ({
           fill={fill}
           r={radius}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          stroke-width={strokeWidth}
         />
 
         {complement &&
@@ -45,27 +44,12 @@ const Circles = ({
               fill={fill}
               r={radius}
               stroke={stroke}
-              strokeWidth={strokeWidth}
+              stroke-width={strokeWidth}
             />
           ))}
       </pattern>
     </defs>
   );
-};
-
-Circles.propTypes = {
-  background: PropTypes.string,
-  complement: PropTypes.bool,
-  fill: PropTypes.string,
-  heavier: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
-  id: PropTypes.string.isRequired,
-  lighter: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
-  radius: PropTypes.number,
-  size: PropTypes.number,
-  stroke: PropTypes.string,
-  strokeWidth: PropTypes.number,
-  thicker: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
-  thinner: PropTypes.oneOfType([PropTypes.bool, PropTypes.number])
 };
 
 Circles.defaultProps = {

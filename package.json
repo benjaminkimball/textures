@@ -2,11 +2,12 @@
   "private": true,
   "name": "textures",
   "version": "0.0.0",
-  "description": "Recreated textures.js (https://riccardoscalco.it/textures/) in React.",
+  "description": "Recreating textures.js (https://riccardoscalco.it/textures/) in Preact.",
   "scripts": {
+    "build": "parcel build src/index.html --out-dir public --public-url /textures",
     "format": "prettier --write 'src/**/*'",
-    "lint": "eslint 'src/**/*.js'",
-    "start": "parcel src/index.html",
+    "lint": "eslint .",
+    "start": "parcel src/index.html --out-dir public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,21 +21,19 @@
   },
   "homepage": "https://gitlab.com/benjaminkimball/textures#readme",
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "preact": "10.0.0-rc.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
-    "eslint": "^5.16.0",
+    "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-standard": "^13.0.1",
-    "eslint-config-standard-react": "^8.0.0",
-    "eslint-plugin-import": "^2.18.0",
+    "eslint-config-standard-jsx": "^7.0.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.0",
     "parcel-bundler": "^1.12.3",

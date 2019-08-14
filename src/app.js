@@ -1,5 +1,4 @@
-import React from "react";
-import { render } from "react-dom";
+import { h, render } from "preact";
 
 import { Circles, Lines, Paths } from "./components/textures";
 
@@ -18,11 +17,13 @@ const App = () => (
       x="50%"
       y="65%"
       style={{ fontSize: "54px", fontWeight: "bold" }}
-      textAnchor="middle"
+      text-anchor="middle"
     >
       textures
     </text>
   </svg>
 );
 
-render(<App />, document.getElementById("root"));
+const rootEl = document.getElementById("root");
+
+render(<App />, rootEl, rootEl.lastChild);

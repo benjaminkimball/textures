@@ -1,0 +1,12 @@
+name: Publish Pages
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build Assets
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm ci && npm run build

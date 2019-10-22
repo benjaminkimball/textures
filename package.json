@@ -4,22 +4,23 @@
   "version": "0.0.0",
   "description": "Recreating textures.js (https://riccardoscalco.it/textures/) in Preact.",
   "scripts": {
-    "build": "parcel build src/index.html --out-dir public --public-url /textures",
+    "build": "parcel build src/index.html --out-dir docs --public-url /textures",
     "format": "prettier --write 'src/**/*'",
     "lint": "eslint .",
-    "start": "parcel src/index.html --out-dir public",
+    "publish": "npm run lint && npm run build",
+    "start": "parcel src/index.html --out-dir docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/benjaminkimball/textures.git"
+    "url": "git+ssh://git@github.com:benjaminkimball/textures.git"
   },
   "author": "Benjamin Kimball <hello@benjaminkimball.com>",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://gitlab.com/benjaminkimball/textures/issues"
+    "url": "https://github.com/benjaminkimball/textures/issues"
   },
-  "homepage": "https://gitlab.com/benjaminkimball/textures#readme",
+  "homepage": "https://github.com/benjaminkimball/textures#readme",
   "dependencies": {
     "preact": "^10.0.1"
   },

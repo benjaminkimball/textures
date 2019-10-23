@@ -16,7 +16,7 @@
     "url": "git+ssh://git@github.com:benjaminkimball/textures.git"
   },
   "author": "Benjamin Kimball <hello@benjaminkimball.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/benjaminkimball/textures/issues"
   },

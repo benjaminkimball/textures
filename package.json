@@ -8,7 +8,7 @@
     "format": "prettier --write 'src/**/*'",
     "lint": "eslint .",
     "publish": "npm run lint && npm run build",
-    "start": "parcel src/index.html --out-dir docs",
+    "start": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,4 +1,5 @@
-import { h } from "preact";
+import React from "react";
+import { bool, number, oneOfType, string } from "prop-types";
 
 const Paths = ({
   background,
@@ -45,14 +46,31 @@ const Paths = ({
         <path
           d={path(size, type)}
           fill={fill}
-          shape-rendering={shapeRendering}
+          shapeRendering={shapeRendering}
           stroke={stroke}
-          stroke-linecap="square"
-          stroke-width={strokeWidth}
+          strokeLinecap="square"
+          strokeWidth={strokeWidth}
         />
       </pattern>
     </defs>
   );
+};
+
+Paths.propTypes = {
+  background: string,
+  fill: string,
+  heavier: oneOfType([bool, number]),
+  height: number,
+  id: string.isRequired,
+  lighter: oneOfType([bool, number]),
+  shapeRendering: string,
+  size: number,
+  stroke: string,
+  strokeWidth: number,
+  thicker: oneOfType([bool, number]),
+  thinner: oneOfType([bool, number]),
+  type: string,
+  width: number
 };
 
 Paths.defaultProps = {

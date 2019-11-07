@@ -1,4 +1,5 @@
-import { h } from "preact";
+import React from "react";
+import { arrayOf, bool, number, oneOfType, string } from "prop-types";
 
 const Lines = ({
   background,
@@ -33,15 +34,29 @@ const Lines = ({
           <path
             key={index}
             d={path(size, orientation)}
-            shape-rendering={shapeRendering}
+            shapeRendering={shapeRendering}
             stroke={stroke}
-            stroke-linecap="square"
-            stroke-width={strokeWidth}
+            strokeLinecap="square"
+            strokeWidth={strokeWidth}
           />
         ))}
       </pattern>
     </defs>
   );
+};
+
+Lines.propTypes = {
+  background: string,
+  heavier: oneOfType([bool, number]),
+  id: string.isRequired,
+  lighter: oneOfType([bool, number]),
+  orientation: oneOfType([arrayOf(string), string]),
+  shapeRendering: string,
+  size: number,
+  stroke: string,
+  strokeWidth: number,
+  thicker: oneOfType([bool, number]),
+  thinner: oneOfType([bool, number])
 };
 
 Lines.defaultProps = {

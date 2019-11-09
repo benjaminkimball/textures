@@ -1,7 +1,7 @@
 import React from "react";
 import { bool, number, oneOfType, string } from "prop-types";
 
-import getPathsPattern from "../../../lib/get-paths-pattern";
+import getPathsPattern from "../../utils/get-paths-pattern";
 
 const Paths = ({
   background,

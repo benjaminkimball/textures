@@ -1,7 +1,7 @@
 import React from "react";
 import { arrayOf, bool, number, oneOfType, string } from "prop-types";
 
-import getLinesPattern from "../../../lib/get-lines-pattern";
+import getLinesPattern from "../../utils/get-lines-pattern";
 
 const Lines = ({
   background,

@@ -1,5 +1,4 @@
-import React from "react";
-import { bool, number, oneOfType, string } from "prop-types";
+import { h } from "preact";
 
 import getPathsPattern from "../../utils/get-paths-pattern";
 
@@ -48,31 +47,14 @@ const Paths = ({
         <path
           d={getPathsPattern(size, type)}
           fill={fill}
-          shapeRendering={shapeRendering}
+          shape-rendering={shapeRendering}
           stroke={stroke}
-          strokeLinecap="square"
-          strokeWidth={strokeWidth}
+          stroke-linecap="square"
+          stroke-width={strokeWidth}
         />
       </pattern>
     </defs>
   );
-};
-
-Paths.propTypes = {
-  background: string,
-  fill: string,
-  heavier: oneOfType([bool, number]),
-  height: number,
-  id: string.isRequired,
-  lighter: oneOfType([bool, number]),
-  shapeRendering: string,
-  size: number,
-  stroke: string,
-  strokeWidth: number,
-  thicker: oneOfType([bool, number]),
-  thinner: oneOfType([bool, number]),
-  type: string,
-  width: number
 };
 
 Paths.defaultProps = {

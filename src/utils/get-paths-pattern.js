@@ -1,4 +1,4 @@
-export default function getPathsPattern(size, type) {
+export default (size, type) => {
   const s = size;
 
   switch (type) {
@@ -100,4 +100,4 @@ export default function getPathsPattern(size, type) {
       `;
     }
   }
-}
+};

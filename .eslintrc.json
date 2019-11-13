@@ -1,10 +1,21 @@
 {
   "extends": [
     "standard",
-    "standard-react",
+    "standard-jsx",
     "plugin:prettier/recommended",
     "plugin:security/recommended"
   ],
   "parser": "babel-eslint",
-  "plugins": ["prettier", "security"]
+  "plugins": ["prettier", "security"],
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "none",
+        "ignoreRestSiblings": true,
+        "varsIgnorePattern": "^h$"
+      }
+    ]
+  }
 }

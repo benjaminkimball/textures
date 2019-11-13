@@ -1,5 +1,4 @@
-import React from "react";
-import { bool, number, oneOfType, string } from "prop-types";
+import { h } from "preact";
 
 const Circles = ({
   background,
@@ -33,11 +32,16 @@ const Circles = ({
           fill={fill}
           r={radius}
           stroke={stroke}
-          strokeWidth={strokeWidth}
+          stroke-width={strokeWidth}
         />
 
         {complement &&
-          [[0, 0], [0, size], [size, 0], [size, size]].map(([x, y], index) => (
+          [
+            [0, 0],
+            [0, size],
+            [size, 0],
+            [size, size]
+          ].map(([x, y], index) => (
             <circle
               key={index}
               cx={x}
@@ -45,27 +49,12 @@ const Circles = ({
               fill={fill}
               r={radius}
               stroke={stroke}
-              strokeWidth={strokeWidth}
+              stroke-width={strokeWidth}
             />
           ))}
       </pattern>
     </defs>
   );
-};
-
-Circles.propTypes = {
-  background: string,
-  complement: bool,
-  fill: string,
-  heavier: oneOfType([bool, number]),
-  id: string.isRequired,
-  lighter: oneOfType([bool, number]),
-  radius: number,
-  size: number,
-  stroke: string,
-  strokeWidth: number,
-  thicker: oneOfType([bool, number]),
-  thinner: oneOfType([bool, number])
 };
 
 Circles.defaultProps = {

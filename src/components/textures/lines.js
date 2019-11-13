@@ -1,5 +1,4 @@
-import React from "react";
-import { arrayOf, bool, number, oneOfType, string } from "prop-types";
+import { h } from "preact";
 
 import getLinesPattern from "../../utils/get-lines-pattern";
 
@@ -36,29 +35,15 @@ const Lines = ({
           <path
             key={index}
             d={getLinesPattern(size, orientation)}
-            shapeRendering={shapeRendering}
+            shape-rendering={shapeRendering}
             stroke={stroke}
-            strokeLinecap="square"
-            strokeWidth={strokeWidth}
+            stroke-linecap="square"
+            stroke-width={strokeWidth}
           />
         ))}
       </pattern>
     </defs>
   );
-};
-
-Lines.propTypes = {
-  background: string,
-  heavier: oneOfType([bool, number]),
-  id: string.isRequired,
-  lighter: oneOfType([bool, number]),
-  orientation: oneOfType([arrayOf(string), string]),
-  shapeRendering: string,
-  size: number,
-  stroke: string,
-  strokeWidth: number,
-  thicker: oneOfType([bool, number]),
-  thinner: oneOfType([bool, number])
 };
 
 Lines.defaultProps = {

@@ -1,4 +1,4 @@
-export default function getLinesPattern(size, orientation) {
+export default (size, orientation) => {
   const s = size;
 
   switch (orientation) {
@@ -92,4 +92,4 @@ export default function getLinesPattern(size, orientation) {
       `;
     }
   }
-}
+};

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "parcel build src/index.html --out-dir docs --public-url /textures",
     "format": "prettier --write 'src/**/*'",
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint 'src/**/*.js'",
     "publish": "rimraf docs && npm run lint && npm run build",
     "start": "parcel src/index.html"
   },

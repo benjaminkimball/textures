@@ -1,4 +1,4 @@
-import { h } from "preact";
+import React from "react";
 
 import getPathsPattern from "../../utils/get-paths-pattern";
 
@@ -47,10 +47,10 @@ const Paths = ({
         <path
           d={getPathsPattern(size, type)}
           fill={fill}
-          shape-rendering={shapeRendering}
+          shapeRendering={shapeRendering}
           stroke={stroke}
-          stroke-linecap="square"
-          stroke-width={strokeWidth}
+          strokeLinecap="square"
+          strokeWidth={strokeWidth}
         />
       </pattern>
     </defs>

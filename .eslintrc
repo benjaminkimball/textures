@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "standard",
+    "standard-react",
+    "plugin:prettier/recommended",
+    "plugin:security/recommended",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "plugins": ["prettier", "react-hooks", "security"],
+  "rules": {
+    "react/no-unused-prop-types": "off",
+    "react/prop-types": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error"
+  }
+}

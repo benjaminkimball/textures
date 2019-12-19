@@ -1,4 +1,4 @@
-import { h } from "preact";
+import React from "react";
 
 const Circles = ({
   background,
@@ -32,7 +32,7 @@ const Circles = ({
           fill={fill}
           r={radius}
           stroke={stroke}
-          stroke-width={strokeWidth}
+          strokeWidth={strokeWidth}
         />
 
         {complement &&
@@ -49,7 +49,7 @@ const Circles = ({
               fill={fill}
               r={radius}
               stroke={stroke}
-              stroke-width={strokeWidth}
+              strokeWidth={strokeWidth}
             />
           ))}
       </pattern>

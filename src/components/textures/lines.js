@@ -1,4 +1,4 @@
-import { h } from "preact";
+import React from "react";
 
 import getLinesPattern from "../../utils/get-lines-pattern";
 
@@ -35,10 +35,10 @@ const Lines = ({
           <path
             key={index}
             d={getLinesPattern(size, orientation)}
-            shape-rendering={shapeRendering}
+            shapeRendering={shapeRendering}
             stroke={stroke}
-            stroke-linecap="square"
-            stroke-width={strokeWidth}
+            strokeLinecap="square"
+            strokeWidth={strokeWidth}
           />
         ))}
       </pattern>

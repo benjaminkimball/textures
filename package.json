@@ -2,7 +2,7 @@
   "private": true,
   "name": "textures",
   "version": "2.0.0",
-  "description": "Recreating textures.js (https://riccardoscalco.it/textures/) in Preact.",
+  "description": "Recreating textures.js (https://riccardoscalco.it/textures/) in React.",
   "scripts": {
     "build": "parcel build src/index.html --out-dir docs --public-url /textures",
     "format": "prettier --write 'src/**/*'",

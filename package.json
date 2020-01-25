@@ -6,7 +6,7 @@
   "scripts": {
     "build": "parcel build src/index.html --out-dir docs --public-url /textures",
     "format": "prettier --write 'src/**/*'",
-    "lint": "eslint 'src/**/*.js'",
+    "lint": "eslint 'src/**/*.{js,jsx}'",
     "publish": "rimraf docs && npm run lint && npm run build",
     "start": "parcel src/index.html"
   },
@@ -25,15 +25,15 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.5.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-config-standard-react": "^9.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.1",

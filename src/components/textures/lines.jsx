@@ -13,7 +13,7 @@ const Lines = ({
   stroke,
   strokeWidth,
   thicker,
-  thinner
+  thinner,
 }) => {
   if (heavier)
     isNaN(heavier) ? (strokeWidth *= 2) : (strokeWidth *= 2 * heavier);
@@ -51,7 +51,7 @@ Lines.defaultProps = {
   shapeRendering: "auto",
   size: 20,
   stroke: "#343434",
-  strokeWidth: 2
+  strokeWidth: 2,
 };
 
 export default Lines;

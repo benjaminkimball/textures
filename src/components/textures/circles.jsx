@@ -12,7 +12,7 @@ const Circles = ({
   stroke,
   strokeWidth,
   thicker,
-  thinner
+  thinner,
 }) => {
   if (heavier) isNaN(heavier) ? (radius *= 2) : (radius *= 2 * heavier);
 
@@ -40,7 +40,7 @@ const Circles = ({
             [0, 0],
             [0, size],
             [size, 0],
-            [size, size]
+            [size, size],
           ].map(([x, y], index) => (
             <circle
               key={index}
@@ -63,7 +63,7 @@ Circles.defaultProps = {
   radius: 2,
   size: 20,
   stroke: "#343434",
-  strokeWidth: 0
+  strokeWidth: 0,
 };
 
 export default Circles;

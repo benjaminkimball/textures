@@ -16,7 +16,7 @@ const Paths = ({
   thicker,
   thinner,
   type,
-  width
+  width,
 }) => {
   if (heavier)
     isNaN(heavier) ? (strokeWidth *= 2) : (strokeWidth *= 2 * heavier);
@@ -64,7 +64,7 @@ Paths.defaultProps = {
   size: 20,
   stroke: "#343434",
   strokeWidth: 2,
-  width: 1
+  width: 1,
 };
 
 export default Paths;
